@@ -1,0 +1,75 @@
+body {
+    background-color: #000;
+    color: #fff;
+
+    /* Allow mouse dragging. */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    /* Allow canvas to hit the edges of the browser viewport. */
+    margin: 0;
+}
+
+#screen canvas {
+    margin: auto;
+
+    /* Hide the gap for font descenders. */
+    display: block;
+}
+
+input {
+    border: 0px;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, .2),
+                      0 0 4px rgba(0, 0, 0, .2);
+    color: #ccc;
+    background: #444;
+    outline: none;
+}
+
+.name {
+    position: absolute;
+    top: 70%;
+    left: 42.5%;
+    width: 15%;
+    visibility:hidden;
+}
+
+.roomnum {
+    position: absolute;
+    top: 65%;
+    left: 68%;
+    width: 15%;
+    visibility:hidden;
+}
+
+#chat {
+	background-color: grey;
+    opacity: 0.5;
+	position:absolute;
+	bottom:0%; left:0%;
+	width: 100%;
+	height: 250px;
+    z-index:1;
+}
+
+#scrollMessages {
+	height: 150px;
+	overflow: auto;
+}
+
+#divNewMessage {
+	width: 100%;
+	position:absolute;
+	z-index:2;
+}
+
+#txtMessage {
+	width: 79%;
+}
+
+#btnEnviar {
+    width: 20%;
+}

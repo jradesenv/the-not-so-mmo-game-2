@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>spidersoliders</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+</head>
+
+<body>
+    <div id="screen"></div>
+    <div id="nameinput">
+        <input type="text" class="name" name="name" />
+    </div>
+    <div id="roominput">
+        <input type="text" class="roomnum" name="roomnum" />
+    </div>
+
+    <div id="chat">
+        <h4>Bate-papo UOL (tecle ENTER para enviar):</h4>
+        <div id="scrollMessages">
+            <ul id="ulMessages">
+            </ul>
+        </div>
+        <div id="divNewMessage">
+            <input type="text" id="txtMessage" /> <button id="btnEnviar">ENVIAR</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="lib/melonJS-0.9.7.js"></script>
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/resources.js"></script>
+    <script type="text/javascript" src="js/hud.js"></script>
+
+    <script type="text/javascript" src="js/screens/load.js"></script>
+    <script type="text/javascript" src="js/screens/room.js"></script>
+    <script type="text/javascript" src="js/screens/lobby.js"></script>
+    <script type="text/javascript" src="js/screens/load.js"></script>
+    <script type="text/javascript" src="js/screens/start.js"></script>
+    <script type="text/javascript" src="js/screens/play.js"></script>
+
+    <script type="text/javascript" src="js/entities/baseentity.js"></script>
+    <script type="text/javascript" src="js/entities/button.js"></script>
+    <script type="text/javascript" src="js/entities/player.js"></script>
+
+    <script type="text/javascript">
+            // Start game
+            window.onReady(function () {
+                game.onload();
+            });
+        </script>
+</body>
+
+</html>
