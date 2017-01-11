@@ -39,7 +39,6 @@ game.playScreen = me.ScreenObject.extend({
         global.network.socket.on("new player", this.onNewPlayer);
         global.network.socket.on("remove player", this.onRemovePlayer);
         global.network.socket.on("move player", this.onMovePlayer);
-        global.network.socket.on("remove player", this.onRemovePlayer);
         global.network.socket.on("pong", this.updateLatency);
         global.network.socket.on("new message", this.newMessage);
 

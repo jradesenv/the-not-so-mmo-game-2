@@ -12,8 +12,10 @@ var global = {
     DEBUG: true,
     network: {
         socket: undefined,
-        host: "localhost",
-        "port": 3000,
+        ///host: "localhost",
+        host: "https://the-not-so-mmo-game-2.herokuapp.com/",
+        //port: 3000,
+        port: 8080,
         totlatency: 0,
         latency: 0,
         emitTime: 0,

@@ -5,7 +5,7 @@ var express = require('express'),
     io = require('socket.io').listen(server),
     Player = require("./Player").Player,
     util = require("util");
-var port = 3000;
+var port = process.env.PORT || 3000;
 
 var players;
 
