@@ -34,7 +34,8 @@ game.playScreen = me.ScreenObject.extend({
         me.input.bindKey(me.input.KEY.Z, "attack");
         me.input.bindKey(me.input.KEY.X, "web");
 
-        global.network.socket = io.connect(global.network.host, {port: global.network.port, transports: ["websocket"]});
+        // global.network.socket = io.connect(global.network.host, {port: global.network.port, transports: ["websocket"]});
+        global.network.socket = io.connect(global.network.host, {transports: ["websocket"]});
 
         global.network.socket.on("new player", this.onNewPlayer);
         global.network.socket.on("remove player", this.onRemovePlayer);
