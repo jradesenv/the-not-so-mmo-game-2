@@ -39,10 +39,10 @@ game.loadScreen = me.ScreenObject.extend({
         context.fillStyle="darkred";
         context.font = '24px Sans-Serif';
         context.textBaseline = 'Top';
-        context.fillText('oblak', 25, 315);
+        context.fillText('NTMobile', 25, 315);
         context.font = 'Bold 32px Sans-Serif';
         context.textBaseline = 'Top';
-        context.fillText('games', 85, 315);
+        context.fillText('Fun Games', 85, 315);
 
         // progress bar
         var gradient=context.createLinearGradient(0, 0, 196, 0);
